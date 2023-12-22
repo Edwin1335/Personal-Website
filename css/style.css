@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200;300;400;500&display=swap");
+
+:root {
+	--bg-color: #0b192f;
+	--bg-dark-color: #040f21;
+	--main-color: #005b41;
+	--text-color: #008170;
+	--text-main: #ccd6f6;
+
+	--blue-bg-color: #0e1037;
+	--blue-bg-dark-color: #38419d;
+	--blue-main-color: #3887be;
+	--blue-text-color: #52d3d8;
+
+	--og-black: #000000;
+	--og-bg-dark: #0a192f;
+	--og-dark-blue: #112240;
+	--og-blue-highlight: #64ffda;
+	--og-subheader: #8892b0;
+	--og-gray: #a8b2d1;
+
+	--font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Display", -apple-system, system-ui, sans-serif;
+	--font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+	--font-popp: "Poppins", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+	--font-asap: "Asap", sans-serif;
+
+	--nav-max-width: 80rem;
+	--sec-max-width: 60rem;
+	--nav-bar: 100px;
+	--nav-bar-links: 50px;
+	--container: 69.735rem;
+
+	/* FontSize*/
+	--fs-80: 4rem;
+	--fs-72: 4.5rem;
+	--fs-48: 3rem;
+	--fs-40: 2.5rem;
+	--fs-32: 2rem;
+	--fs-24: 1.5rem;
+	--fs-20: 1rem;
+	--fs-18: 0.9rem;
+	--fs-xs: 0.65rem;
+}
+
+/* ---------- Reset ---------- */
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--blue-bg-dark-color);
+	font-family: var(--font-sans);
+	font-size: var(--fs-20);
+	line-height: 1.3;
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.1;
+	color: var(--text-main);
+}
+
+a {
+	color: var(--text-main);
+	text-decoration: none;
+	transition: all 270ms ease-in-out;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #00ffff;
+}
+
+img,
+svg {
+	display: block;
+}
+
+/* ---------- Utilities ---------- */
+.wrapper {
+	width: calc(100% - 2rem);
+	max-width: var(--container);
+	margin-inline: auto;
+}
+
+/* 600px */
+@media (min-width: 37.5em) {
+	.wrapper {
+		width: calc(100% - 3.75rem);
+	}
+}
+
+.flex-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	gap: 1rem;
+}
+
+.btn {
+	display: block;
+	color: var(--blue-text-color);
+	border: 1.5px solid var(--blue-text-color);
+	border-radius: 4px;
+	padding: 0.75em 1em;
+	line-height: 1;
+	width: fit-content;
+}
+
+.big-heading {
+	margin: 0px;
+	font-size: clamp(1.5rem, 8vw, 3rem);
+}
+
+/* ---------- HEADER ---------- */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0b192fcc;
+	position: fixed;
+	font-family: var(--font-mono);
+	font-size: var(--fs-xs);
+	padding: 0 50px;
+	width: 100%;
+	height: var(--nav-bar);
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 50%;
+	max-width: var(--nav-max-width);
+}
+
+#navbar .logo img {
+	height: 80%;
+	filter: invert(76%) sepia(57%) saturate(738%) hue-rotate(123deg) brightness(101%) contrast(104%);
+}
+
+#navbar ul li a {
+	padding: 5px;
+}
+
+/* ---------- MAIN ---------- */
+main {
+	padding: 0 150px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: var(--nav-bar);
+	max-width: var(--sec-max-width);
+	min-height: 100vh;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.hero h1 {
+	color: var(--blue-text-color);
+	font-family: var(--font-mono);
+	font-size: var(--fs-xs);
+	margin: 0px 0px 30px 4px;
+}
+
+.big-heading {
+	font-size: 1rem;
+	font-size: clamp(1rem, 0.5rem + 7.68vw, 3rem);
+	letter-spacing: -0.028em;
+	line-height: 1.1;
+	color: var(--og-subheader);
+	font-family: var(--font-asap);
+}
+
+.my-name {
+	color: var(--text-main);
+}
+
+.hero-container p {
+	margin: 1.5rem 0px 0px;
+	max-width: 540px;
+	color: var(--og-gray);
+	font-family: var(--font-asap);
+	font-size: var(--fs-18);
+}
+
+.hero-container a {
+	margin: 20px 0px 0px;
+}
+
+footer {
+	background-color: #38419d;
+}
