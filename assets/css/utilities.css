@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Montserrat:wght@500&family=Poppins:wght@500;600&family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+
+/* Descope.com */
+:root {
+	--bg-body: #1c1c23;
+	--bg-section: #646469;
+	--paragraph: #0d0d11;
+	--text1: #00ffff;
+	--text2: #0ed8d2;
+	--text3: #8b8b98;
+	--text4: #121217;
+	--text5: #e0faf9;
+	--text6: #0099aa;
+
+	/* FontSize*/
+	--fs-18: 1.125rem;
+	--fs-88: 5.5rem;
+	--fs-72: 4.5rem;
+	--fs-48: 3rem;
+	--fs-40: 2.5rem;
+	--fs-32: 2rem;
+	--fs-24: 1.5rem;
+	--fz-xs: 0.8rem;
+	--container: 69.735rem;
+	--navbar: 100px;
+
+	/* FontFam */
+	--font-asap: "Asap", sans-serif;
+	--font-mont: "Montserrat", sans-serif;
+	--font-pop: "Poppins", sans-serif;
+	--font-space: "Space Grotesk", sans-serif;
+	--font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+	/* Other */
+	--transition: 250ms ease-in-out;
+}
+
+/* Reset */
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	list-style: none;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-space);
+	background-color: var(--bg-body);
+	color: var(--text5);
+	font-size: var(--fs-18);
+	line-height: 1.56;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	transition: all 2s ease-in-out;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #00ffff;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--font-mono);
+	padding: 0 50px;
+	height: var(--navbar);
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	height: 80px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	height: 100%;
+}
+
+.logo img {
+	height: 100%;
+	filter: invert(76%) sepia(57%) saturate(738%) hue-rotate(123deg) brightness(101%) contrast(104%);
+}
+
+.nav-top-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	font-size: var(--fz-xs);
+	gap: 1rem;
+}
+
+.nav-links {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	gap: 1rem;
+}
+
+.nav-links li {
+	margin: 0 5px;
+}
+
+.nav-links li a {
+	display: inline-block;
+	padding: 10px;
+	height: 100%;
+	text-align: center;
+	color: var(--text5);
+}
+
+.btn {
+	display: block;
+	color: var(--text1);
+	border: 1.5px solid var(--text2);
+	border-radius: 4px;
+	padding: 0.75rem 1rem;
+	font-family: var(--font-mono);
+}
+
+.resume_link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15px;
+	text-align: center;
+	color: var(--text1);
+}
+
+.wrapper {
+	width: calc(100% - 2rem);
+	max-width: var(--container);
+	margin-inline: auto;
+}
+
+/* 600px */
+@media (min-width: 37.5em) {
+	.wrapper {
+		width: calc(100% - 3.75rem);
+	}
+}
