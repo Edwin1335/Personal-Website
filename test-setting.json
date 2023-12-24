@@ -1,0 +1,83 @@
+{
+	"workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.editor.enablePreview": false,
+	"workbench.colorTheme": "Halcyon",
+	"window.zoomLevel": 1.5,
+	"explorer.confirmDelete": false,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
+	"git.confirmSync": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"prettier.htmlWhitespaceSensitivity": "strict",
+	"prettier.bracketSameLine": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cssPeek.peekToExclude": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/dist/**"
+	],
+	"editor.tokenColorCustomizations": {
+		"[Halcyon]": {
+			"textMateRules": [
+				{
+					"name": "HTML Tags",
+					"scope": [
+						"punctuation.definition.tag.end.html",
+						"punctuation.definition.tag.begin.html"
+					],
+					"settings": {
+						"foreground": "#c15353",
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"name": "HTML Text",
+					"scope": ["text.html"],
+					"settings": {
+						"foreground": "#bfbfbf"
+					}
+				},
+				{
+					"name": "Entity names",
+					"scope": ["entity.name.tag", "entity.other.attribute-name"],
+					"settings": {
+						"fontStyle": "bold"
+					}
+				}
+			]
+		}
+	},
+	"git.openRepositoryInParentFolders": "never",
+	"editor.minimap.enabled": false,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"indentRainbow.excludedLanguages": [],
+	"indentRainbow.includedLanguages": ["html", "html5"],
+	"indentRainbow.lightIndicatorStyleLineWidth": 3,
+	"indentRainbow.indicatorStyle": "light",
+	"indentRainbow.colors": [
+		"rgba(255,255,64,0.4)",
+		"rgba(127,255,127,0.4)",
+		"rgba(255,127,255,0.4)",
+		"rgba(79,236,236,0.4)"
+	],
+	"indentRainbow.indentSetter": {},
+	"breadcrumbs.enabled": false,
+	"markdown-preview-enhanced.codeBlockTheme": "auto.css",
+	"markdown-preview-enhanced.previewTheme": "solarized-dark.css",
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	}
+}

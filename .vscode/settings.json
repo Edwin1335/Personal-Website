@@ -1,3 +1,6 @@
 {
-	"svg.preview.background": "white"
+	"svg.preview.background": "white",
+	"liveServer.settings.port": 5501,
+	"window.zoomLevel": 1.5,
+	"editor.formatOnSave": true,
 }
